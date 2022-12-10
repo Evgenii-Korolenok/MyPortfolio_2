@@ -1,0 +1,135 @@
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(185, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 48px;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 32px;
+  z-index: 1000;
+  background: var(--projectCardColor);
+}
+.header .logo a {
+  color: var(--textColor);
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    background: var(--projectCardColor);
+    position: absolute;
+    height: max-content;
+    width: 80%;
+    border-radius: 16px;
+    padding: 116px;
+    top: -100rem;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    z-index: 1000;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 16px 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 16px 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .navLists .navItem .navLink .headerNumber {
+    color: var(--primaryHover);
+  }
+  .header .navBar .navLists .btn {
+    margin-top: 16px;
+  }
+  .header .navBar .navLists .btn a {
+    color: var(--textColor);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
+  .header .navBar .closeNavbar:hover .icon {
+    color: var(--primaryColor);
+  }
+  .header .activeNavbar {
+    top: 96px;
+  }
+}
+
+.activeHeader {
+  border-color: var(--projectCardColor);
+  box-shadow: 0 2px 4px rgba(1, 15, 29, 0.904);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 40px 32px;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 16px;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 16px;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .navLists .navItem .navLink .headerNumber {
+    color: var(--primaryHover);
+  }
+  .header .navBar .navLists .btn {
+    margin-left: 16px;
+  }
+  .header .navBar .navLists .btn a {
+    color: var(--primaryColor);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header {
+    padding: 40px 80px;
+  }
+  .header .navBar .navLists {
+    padding: 0 32px;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 32px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
