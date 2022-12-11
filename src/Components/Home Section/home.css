@@ -5,27 +5,52 @@
   --paragraphColor: rgb(127, 127, 175);
   --BgColor: #031a30;
   --formColor: rgb(2, 15, 29);
-  --projectCardColor: #072340;
+  --projectCardColor: linear-gradient(90.21deg, rgba(170, 54, 124, 0.8) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
   --textColor: #dae4fb;
   --headerHeight: 48px;
 }
 
+.home {
+  background-image: url("../../Assets/bg.jpeg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.home .homeImg {
+  height: 100%;
+  width: 100%;
+  animation: updown 4s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
 .home .homeContainer {
   padding: 64px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin: auto;
 }
-.home .homeContainer .introText {
+.home .introText {
+  color: rgba(196, 99, 157, 0.8);
   font-size: 21px;
-  color: var(--primaryColor);
   font-weight: 600;
   letter-spacing: 1px;
 }
-.home .homeContainer .title {
+.home .title {
   font-size: 53px;
   font-weight: 600;
-  color: var(--textColor);
+  color: #fff;
   padding: 11px 0;
 }
-.home .homeContainer .subTitle {
+.home .subTitle {
   display: block;
   font-size: 29px;
   font-weight: 600;
@@ -33,46 +58,46 @@
   line-height: 32px;
   padding: 8px 0;
 }
-.home .homeContainer .homeParagraph {
+.home .homeParagraph {
   font-size: 21px;
   padding: 10px 16px;
   color: var(--paragraphColor);
   padding: 16px 0;
   max-width: 600px;
 }
-.home .homeContainer .lowerHomeSection .contactBtn {
+.home .lowerHomeSection .contactBtn {
   padding: 10px 16px;
-  background: var(--primaryColor);
+  background: var(--projectCardColor);
   color: var(--BgColor);
   border: none;
   outline: none;
 }
-.home .homeContainer .lowerHomeSection .contactBtn:hover {
+.home .lowerHomeSection .contactBtn:hover {
   background: var(--primaryHover);
 }
-.home .homeContainer .lowerHomeSection .contactBtn a {
+.home .lowerHomeSection .contactBtn a {
   font-size: 18px;
   font-weight: 600;
   gap: 8px;
   align-items: center;
-  color: var(--BgColor);
-}
-.home .homeContainer .lowerHomeSection .contactBtn a:hover {
   color: var(--textColor);
 }
-.home .homeContainer .lowerHomeSection .scrollDiv {
+.home .lowerHomeSection .contactBtn a:hover {
+  color: var(--BgColor);
+}
+.home .lowerHomeSection .scrollDiv {
   padding-top: 16px;
   display: flex;
   align-items: center;
 }
-.home .homeContainer .lowerHomeSection .scrollDiv .scroll {
-  font-size: 16px;
-  color: var(--primaryColor);
+.home .lowerHomeSection .scrollDiv .scroll {
+  font-size: 18px;
+  color: rgba(196, 99, 157, 0.8);
 }
-.home .homeContainer .lowerHomeSection .scrollDiv .icon {
-  font-size: 16px;
+.home .lowerHomeSection .scrollDiv .icon {
+  font-size: 18px;
   margin-left: 10px;
-  color: var(--primaryColor);
+  color: rgba(196, 99, 157, 0.8);
   animation: move 0.9s infinite;
 }
 @keyframes move {
@@ -127,8 +152,7 @@
 }
 @media screen and (min-width: 770px) {
   .home .homeContainer {
-    padding: 80px 24px;
-    width: 70%;
+    width: 80%;
     margin: auto;
   }
   .home .leftIcons, .home .rightEmail {

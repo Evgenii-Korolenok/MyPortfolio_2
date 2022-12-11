@@ -5,18 +5,44 @@
     --paragraphColor: rgb(127, 127, 175);
     --BgColor: #031a30;
     --formColor: rgb(2, 15, 29);
-    --projectCardColor: #072340;
+    --projectCardColor: linear-gradient(90.21deg, rgba(170, 54, 124, 0.8) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
     --textColor: #dae4fb;
     --headerHeight: 48px;
 }
 
 .home {
+    background-image: url('../../Assets/bg.jpeg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+    .homeImg {
+        height: 100%;
+        width: 100%;
+        animation: updown 4s linear infinite;
+
+        @keyframes updown {
+            0% {
+                transform: translateX(-20px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateX(-20px);
+            }
+        }
+    }
+    
     .homeContainer {
         padding: 64px 24px;
-
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: auto;
+    }
         .introText {
+            color: rgba(196, 99, 157, 0.8);
             font-size: 21px;
-            color: var(--primaryColor);
             font-weight: 600;
             letter-spacing: 1px;
         }
@@ -24,7 +50,7 @@
         .title {
             font-size: 53px;
             font-weight: 600;
-            color: var(--textColor);
+            color: #fff;
             padding: 11px 0;
         }
 
@@ -48,7 +74,7 @@
         .lowerHomeSection {
             .contactBtn {
                 padding: 10px 16px;
-                background: var(--primaryColor);
+                background: var(--projectCardColor);
                 color: var(--BgColor);
                 border: none;
                 outline: none;
@@ -61,11 +87,11 @@
                     font-weight: 600;
                     gap: 8px;
                     align-items: center;
-                    color: var(--BgColor);
+                    color: var(--textColor);
                 }
 
                 a:hover {
-                    color: var(--textColor);
+                    color: var(--BgColor);
                 }
             }
 
@@ -75,14 +101,14 @@
                 align-items: center;
 
                 .scroll {
-                    font-size: 16px;
-                    color: var(--primaryColor);
+                    font-size: 18px;
+                    color: rgba(196, 99, 157, 0.8);
                 }
 
                 .icon {
-                    font-size: 16px;
+                    font-size: 18px;
                     margin-left: 10px;
-                    color: var(--primaryColor);
+                    color: rgba(196, 99, 157, 0.8);
                     animation: move .9s infinite;
                 }
 
@@ -105,8 +131,6 @@
                 }
             }
         }
-        
-    }
 
     .leftIcons, .rightEmail {
         display: none;
@@ -156,8 +180,7 @@
 @media screen and (min-width: 770px) {
     .home {
         .homeContainer {
-            padding: 80px 24px;
-            width: 70%;
+            width: 80%;
             margin: auto;
         }
 
@@ -207,6 +230,8 @@
         }
     }
 }
+
+
 
 @media screen and (min-width: 1240px) {
     .home {

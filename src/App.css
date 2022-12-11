@@ -15,7 +15,7 @@
     --paragraphColor: rgb(127, 127, 175);
     --BgColor: #031a30;
     --formColor: rgb(2, 15, 29);
-    --projectCardColor: #072340;
+    --projectCardColor: linear-gradient(90.21deg, rgba(170, 54, 124, 0.8) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
     --textColor: #dae4fb;
     --headerHeight: 48px;
 }
@@ -79,7 +79,7 @@ img {
     content: '';
     height: 100%;
     width: 0%;
-    background: var(--primaryColor);
+    background: var(--BgColor);
     position: absolute;
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ img {
     content: '';
     height: 100%;
     width: 0%;
-    background: var(--BgColor);
+    background: var(--primaryHover);
     position: absolute;
     top: 0;
     left: 0;
@@ -181,7 +181,10 @@ img {
 }
 
 body {
-    background: var(--BgColor);
+    background-image: url(./Assets/bg.jpeg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 }
 

@@ -5,7 +5,7 @@
   --paragraphColor: rgb(127, 127, 175);
   --BgColor: #031a30;
   --formColor: rgb(2, 15, 29);
-  --projectCardColor: #072340;
+  --projectCardColor: linear-gradient(90.21deg, rgba(170, 54, 124, 0.8) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
   --textColor: #dae4fb;
   --headerHeight: 48px;
 }
@@ -105,13 +105,14 @@
   border-radius: 10px;
   font-size: 18px;
   padding: 16px 0;
-  background: var(--primaryColor);
-  color: var(--BgColor);
+  background: var(--projectCardColor);
+  color: var(--textColor);
   font-weight: 600;
   cursor: pointer;
 }
 .contact .contactContainer .form form .formBtn:hover {
   background: var(--primaryHover);
+  color: var(--BgColor);
 }
 
 @media screen and (min-width: 640px) {

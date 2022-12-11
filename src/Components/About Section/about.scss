@@ -5,21 +5,26 @@
     --paragraphColor: rgb(127, 127, 175);
     --BgColor: #031a30;
     --formColor: rgb(2, 15, 29);
-    --projectCardColor: #072340;
+    --projectCardColor: linear-gradient(90.21deg, rgba(170, 54, 124, 0.) -5.91%, rgba(74, 47, 189, 0.) 111.58%);
     --textColor: #dae4fb;
     --headerHeight: 48px;
 }
 
 .about {
+    border: 2px solid var(--primaryColor);
+    border-radius: 50px;
+    background: var(--projectCardColor);
+    opacity: 1;
+
     .sectionContent {
         .textSection {
             h4 {
-                color: var(--secondaryColor);
+                color: #fff;
                 font-size: 18px;
                 max-width: 100%;
                 letter-spacing: 1px;
                 font-weight: 500;
-                margin: auto;
+                margin: 15px;
             }
 
             .aboutBtn {
@@ -27,12 +32,12 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 32px;
-                background: var(--primaryColor);
+                background: var(--projectCardColor);
                 width: max-content;
                 padding: 10px 15px;
 
                 &:hover {
-                    background: var(--primaryHover);
+                    background: var(--primaryColor);
                 }
 
                 a {
@@ -44,7 +49,7 @@
                 }
 
                 a:hover {
-                    color: var(--textColor);
+                    color: var(--BgColor);
                 }
             }
         }
@@ -62,7 +67,7 @@
             &::before {
                     content: 'Hover Me';
                     font-size: 26px;
-                    color: var(--BgColor);
+                    color: var(--textColor);
                     text-align: center;
                     display: flex;
                     align-items: center;
@@ -70,7 +75,7 @@
                     font-family: 'Inconsolata', monospace;
                     justify-self: center;
                     align-self: center;
-                    background: var(--primaryColor);
+                    background: var(--projectCardColor);
                     mix-blend-mode: screen;
                     position: absolute;
                     height: 100%;
