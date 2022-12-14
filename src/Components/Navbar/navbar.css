@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 768px) {
   .header .navBar {
-    background: var(--projectCardColor);
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.9) -5.91%, rgba(74, 47, 189, 0.9) 111.58%);
     position: absolute;
     height: max-content;
     width: 80%;

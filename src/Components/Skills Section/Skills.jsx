@@ -29,7 +29,7 @@ const Skills = () => {
                     <div className="groupTitle">
                         <h2 className="title">Web Development</h2>
                         <span className="subTitle">
-                            Only Half a Year Experience 
+                            {/* Only Half a Year Experience  */}
                         </span>
                     </div>
 
@@ -86,7 +86,7 @@ const Skills = () => {
                     <div className="groupTitle">
                         <h2 className="title">UI/UX Design</h2>
                         <span className="subTitle">
-                            Only Half a Year Experience 
+                            {/* Only Half a Year Experience  */}
                         </span>
                     </div>
 
@@ -116,7 +116,7 @@ const Skills = () => {
                     <div className="groupTitle">
                         <h2 className="title">Other Skills</h2>
                         <span className="subTitle">
-                            Only Half a Year Experience 
+                            {/* Only Half a Year Experience  */}
                         </span>
                     </div>
 

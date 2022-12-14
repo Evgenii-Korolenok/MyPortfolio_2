@@ -190,17 +190,20 @@ body {
 
 ::selection {
     border-color: var(--primaryColor);
-    color: white;
+    color: var(--primaryColor);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background: var(--projectCardColor);
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primaryHover);
-    border-radius: 10px;
+    background: #00eaff;
+    border-radius: 3px;
 }
 
 @media screen and (min-width: 769px) {

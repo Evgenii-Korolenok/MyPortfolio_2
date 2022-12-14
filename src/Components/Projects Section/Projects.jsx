@@ -5,8 +5,23 @@ import { FiGithub } from 'react-icons/fi';
 import img1 from '../../Assets/first_proj.png';
 import img2 from '../../Assets/bycicle.png';
 import img3 from '../../Assets/lighthouse.png';
+import img4 from '../../Assets/myportfolio.png';
+
 
 const data = [
+    {
+        id: 4,
+        image: img4,
+        livelink: 'https://evgenii-korolenok.github.io/MyPortfolio_2/',
+        demo: '',
+        github: 'https://github.com/Evgenii-Korolenok/MyPortfolio_2',
+        title: 'My Portfolio_2',
+        desc: 'This is my first React App developed by myself as an exam paper for a frontend developer course.',
+        tech1: 'Html',
+        tech2: 'CSS',
+        tech3: 'Javascript',
+        tech4: 'ReactJS',
+    },
     {
         id: 1,
         image: img1,
@@ -17,8 +32,6 @@ const data = [
         desc: 'This artwork was created with CSS and HTML from a Figma template.',
         tech1: 'Html',
         tech2: 'CSS',
-        // tech3: 'Javascript',
-        // tech4: 'ReactJS',
     },
 
     {
@@ -31,8 +44,6 @@ const data = [
         desc: 'This artwork was created with CSS and HTML from a Figma template.',
         tech1: 'Html',
         tech2: 'CSS',
-        // tech3: 'Javascript',
-        // tech4: 'ReactJS',
     },
     {
         id: 3,
@@ -44,10 +55,7 @@ const data = [
         desc: 'Created based on code taken from the web.  Every line is carefully studied when writing.',
         tech1: 'Html',
         tech2: 'CSS',
-        // tech3: 'Javascript',
-        // tech4: 'ReactJS',
     },
-
 ]
 
 const Projects = () => {

@@ -14,13 +14,13 @@ const Home = () => {
             {/* Будет виден только на широком экране */}
             <div className="leftIcons">
                 <div className="socials grid">
-                    <a href="" target='_blank'>
+                    <a href="https://github.com/Evgenii-Korolenok" target='_blank'>
                         <AiFillGithub className='icon'/>
                     </a>
-                    <a href="" target='_blank'>
+                    <a href="https://www.facebook.com/evgenii.korolenok/" target='_blank'>
                         <BsFacebook className='icon'/>
                     </a>
-                    <a href="" target='_blank'>
+                    <a href="https://www.linkedin.com/in/evgenii-korolenok-25a806256" target='_blank'>
                         <AiFillLinkedin className='icon'/>
                     </a>
                     <div className="line"></div>
@@ -38,7 +38,7 @@ const Home = () => {
                     </h1>
 
                     <span className='subTitle'>
-                        I develope scalable web based application and software.
+                    This is my first React App developed by myself as an exam paper for a frontend developer course.
                     </span>
 
                     <p className="homeParagraph">
@@ -67,7 +67,7 @@ const Home = () => {
             <div className="rightEmail">
                 <div>
                     <div className="emailAdress">
-                        <a href="https://mailto:kor-evgenii@mail.ru" target='_blank'>
+                        <a href="mailto:kor-evgenii@mail.ru" target='_blank'>
                             kor-evgenii@mail.ru
                         </a>
                     </div>

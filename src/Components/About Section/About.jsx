@@ -21,11 +21,11 @@ const About = () => {
             <div className="sectionContent grid">
                 <div className="textSection">
                     <h4>
-                        I'm a succes-driven, determined Web developer. I have experience using HTML Sass Javascript to build accessible component- based web pages and systems. 
+                        I am a successful and driven web developer, although I have little experience using HTML, Sass, and Javascript to create accessible web pages and component-based systems. 
                         <br/>
-                        Ability to deliver quality results while collaborating in rapidly changing work environments and team compositions.
+                        Ability to deliver quality results when working collaboratively in a rapidly changing work environment and team composition.
                         <br/>
-                        A passionate person willing to learn more technologies to become a better developer than i was yesterday. So determined and result oriented.
+                        I am a passionate person willing to learn more technologies to become a better developer than I was yesterday.
                     </h4>
 
                     <div className="aboutBtn">
