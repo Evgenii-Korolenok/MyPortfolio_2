@@ -10,6 +10,10 @@
   --headerHeight: 48px;
 }
 
+.projects {
+  border: 2px solid var(--primaryColor);
+  border-radius: 50px;
+}
 .projects .projectContainer {
   margin-top: 16px;
   justify-content: space-between;

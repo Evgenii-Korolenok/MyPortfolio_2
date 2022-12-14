@@ -5,6 +5,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { TbArrowBigRightLines } from 'react-icons/tb';
 import { BsTelegram } from 'react-icons/bs';
 import { FaViber } from 'react-icons/fa';
+import { BsTelephone } from 'react-icons/bs';
 
 const Contact = () => {
     const form = useRef();
@@ -37,6 +38,25 @@ const Contact = () => {
                     <h3>Talk to me</h3>
 
                     <div className="cards grid">
+                    <div className="card">
+                            <div>
+                            <BsTelephone className='icon'/>
+                            </div>
+
+                            <h4>Telephone</h4>
+
+                            <span className="userName">
+                                Evgenii Korolenok
+                            </span>
+
+                            <div>
+                                <a href="tel:+375298425908" className="flex" target='_blank'>
+                                    Call Me
+                                    <TbArrowBigRightLines className='icon'/>
+                                </a>
+                            </div>
+                        </div>
+
                         <div className="card">
                             <div>
                             <BsWhatsapp className='icon'/>
